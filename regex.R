@@ -1,7 +1,7 @@
 library(readr) ; library(dplyr); library(tidyr); library(dbplyr)
 library(stringr); library(odbc); library(DBI); library(tidyr)
 
-bir_origin <- read_tsv("C:/webDev/pycharm/update_mycology_db/data/origin_data/bir_origin.txt", 
+bir_origin <- read_tsv("bir_origin.txt", 
                        col_names = FALSE)
 
 myco_table <- data.frame(bir_origin)
@@ -55,10 +55,10 @@ write.csv(myco_table, file='myco.csv')
 
 myco_subset <- select(myco_table, mycoID, content)
 
- #df_1 <- spread(myco_subset, content, mycoID)
- #df_2 <- spread(dplyr::group_by(myco_subset, mycoID), term, content)
+ # <- spread(myco_subset, content, mycoID)
+ df_2 <- spread(dplyr::group_by(myco_subset, mycoID), mycoID, content)
 
 
 
- View(df_1)
+ #View(df_1)
  View(df_2)
