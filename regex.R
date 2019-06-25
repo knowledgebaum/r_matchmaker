@@ -56,9 +56,11 @@ write.csv(myco_table, file='myco.csv')
 myco_subset <- select(myco_table, mycoID, content)
 
  # <- spread(myco_subset, content, mycoID)
- df_2 <- spread(dplyr::group_by(myco_subset, mycoID), mycoID, content)
+df_2 <- spread(myco_table %>% select(-internal_variable_num), term, content)
 
 
 
  #View(df_1)
  View(df_2)
+
+ write.csv(df_2, "myco_table.csv")
