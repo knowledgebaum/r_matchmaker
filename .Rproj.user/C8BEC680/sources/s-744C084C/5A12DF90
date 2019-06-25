@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1559888112108.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "5A12DF90",
+    "lastKnownWriteTime" : 1561481996,
+    "last_content_update" : 1561481996035,
+    "path" : "C:/webDev/pycharm/matchmaker/r_matchmaker/r_matchmaker/regex.R",
+    "project_path" : "regex.R",
+    "properties" : {
+        "cursorPosition" : "64,0",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "25",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
